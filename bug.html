@@ -1,0 +1,8 @@
+This error occurs when using Tailwind's `@apply` directive with a class that doesn't exist or has a typo.  For example:
+
+```html
+<div class="bg-red-500 @apply bg-blue-500 text-xl">
+</div>
+```
+
+If `bg-blue-500` is not a valid Tailwind class, this will cause an error, and in some cases, may not show any visual errors at all.  You may see unexpected styling or no styling changes.
